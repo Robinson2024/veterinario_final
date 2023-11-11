@@ -3,7 +3,10 @@ package com.example.sqllite;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -13,12 +16,44 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     daoContacto dao;
     Adaptador adapter;
     ArrayList<Contacto>lista;
     Contacto c;
+    public class Inicio extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_inicio);
+        }
+
+        @Override
+        public boolean onTouchEvent(MotionEvent event) {
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                Intent intent = new Intent(Inicio.this, MainActivity.class);
+                startActivity(intent);
+                return true;
+            }
+            return super.onTouchEvent(event);
+        }
+
+        }
+
+        @Override
+        public boolean onTouchEvent(MotionEvent event) {
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                Intent intent = new Intent(com.example.sqllite.MainActivity.this, MainActivity.class);
+                startActivity(intent);
+                return true;
+            }
+            return super.onTouchEvent(event);
+        }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

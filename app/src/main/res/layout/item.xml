@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@mipmap/animales"
     android:gravity="center_horizontal"
     android:layout_marginTop="50dp">
 
@@ -16,12 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/txtNombre"
+            android:textColor="@color/black"
             android:textSize="24sp"/>
 
         <TextView
             android:id="@+id/txtApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/txtApellido"
             android:textSize="24sp"/>
     </LinearLayout>
@@ -36,13 +39,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/txtTelefono"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/txtTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txtTelefono"
+            android:text="@string/txtEmail"
+            android:textColor="@color/black"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -56,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/txtCiudad"
+            android:textColor="@color/black"
             android:textSize="24sp" />
     </LinearLayout>
 

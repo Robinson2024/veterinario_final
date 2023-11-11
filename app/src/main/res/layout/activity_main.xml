@@ -5,16 +5,17 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="#198541"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnInsertar"
-        android:background="@drawable/baseline_add_24"
-        android:layout_width="169dp"
-        android:layout_height="298dp"
-        android:gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="167dp"
         android:layout_weight="1"
+        android:background="@drawable/baseline_add_24"
+        android:gravity="center"
         app:srcCompat="@drawable/baseline_add_24" />
 
 
